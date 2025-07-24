@@ -6,7 +6,7 @@
 
 - Display featured destinations, travel services and user feedback.
 
-- Optimize responsive for desktop, tablet and mobile.
+- Optimize responsive for desktop and mobile.
 
 ---
 
@@ -89,4 +89,3 @@ Jadoo supports beautiful display on all devices:
 |---------|----------|
 | 📱 Mobile | Menu converted to icons, vertical layout |
 | 💻 Desktop | Full information, horizontal layout |
-| 📲 Tablet | Moderately elastic layout |
