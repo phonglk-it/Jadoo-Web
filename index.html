@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="container header">
+                <div class="header-logo">
+                    <img src="Img/Logo.png" alt="Logo">
+                </div>
+                <div class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-link"><a href="#destinations">Destinations</a></li>
+                        <li class="header__nav-link"><a href="#hotels">Hotels</a></li>
+                        <li class="header__nav-link"><a href="#flights">Flights</a></li>
+                        <li class="header__nav-link"><a href="#bookings">Bookings</a></li>
+                        <li class="header__nav-link"><a href="#login">Login</a></li>
+                        <li class="header__nav-link"><button class="header__nav-btn">Sign up</button></li>
+                        <li class="header__nav-link"><select name="country" id="header-sl">
+                            <option value="EN">EN</option>
+						    <option value="VN">VN</option>
+                        </select></li>
+                    </ul>
+                </div>
+
+                <button class="header__mobile-btn">Sign up</button>
+                <label for="header__mobile-input" class="header__mobile-bar">
+                    <i class="fa-solid fa-bars-staggered"></i>                
+                </label>
+
+                <input type="checkbox" hidden class="header-input" id="header__mobile-input">
+
+
+                <div class="header__mobile">
+                    <div class="header__mobile-top">
+                        <img src="Img/Logo.png" alt="Logo" class="header__mobile-logo">
+                        <label for="header__mobile-input">
+                            <img src="Img/Close.png" alt="Close" class="header__mobile-close">
+                        </label>
+                    </div>
+                    <ul class="header__mobile-list">
+                        <li class="header__mobile-link">Language:<select name="country" id="header__mobile-sl">
+                            <option value="EN">English</option>
+						    <option value="VN">Viet Nam</option>
+                        </select></li><hr class="mobile-line">
+                        <li class="header__mobile-link"><a href="#destinations">Destinations <img src="Img/Dropdown.png" alt="Dropdown"></a></li><hr class="mobile-line">
+                        <li class="header__mobile-link"><a href="#hotels">Hotels <img src="Img/Dropdown.png" alt="Dropdown"></a></li><hr class="mobile-line">
+                        <li class="header__mobile-link"><a href="#flights">Flights <img src="Img/Dropdown.png" alt="Dropdown"></a></li><hr class="mobile-line">
+                        <li class="header__mobile-link"><a href="#bookings">Bookings <img src="Img/Dropdown.png" alt="Dropdown"></a></li><hr class="mobile-line">
+                        <li class="header__mobile-link"><a href="#login">Login <img src="Img/Dropdown.png" alt="Dropdown"></a></li><hr class="mobile-line">
+                    </ul>
+                </div>
+            </div>
+            <div class="header-bg">
+                <img src="Img/Headerbg.png" alt="BgHeader">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container travel">
+            <div class="travel__info">
+                <h3>Best Destinations around the world</h3>
+                <h2>Travel, 
+                    <span>enjoy<div class="underline"></div></span>
+                    and live a new
+                    and full life</h2>
+                <p>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+                <div class="travel__info-btn">
+                    <button class="travel__btn-find">Find out more</button>
+                    <button class="travel__btn-play"><img src="Img/Play button.png" alt="Play button"> Play Demo</button>
+                </div>
+            </div>
+            <div class="travel__bg">
+                <img src="Img/Travelbg.png" alt="Background travel">
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container category" id="hotels">
+                <div class="category__info">
+                    <h2 class="topic">CATEGORY</h2>
+                    <h3 class="title">We Offer Best Services</h3>
+                </div>
+                <div class="category__list">
+                    <div class="category__list-item">
+                        <img src="Img/Radio.png" alt="Radido">
+                        <h2>Calculated Weather</h2>
+                        <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+                    </div>
+                    <div class="category__list-item" id="category__item-plane">
+                        <img src="Img/Plane.png" alt="Plane">
+                        <h2>Best Flights</h2>
+                        <p>Engrossed listening. Park gate sell they west hard for the.</p>
+                    </div>
+                    <div class="category__item-under"></div>
+                    <div class="category__list-item">
+                        <img src="Img/Micro.png" alt="Micro">
+                        <h2>Local Events</h2>
+                        <p>Barton vanity itself do in it. Preferd to men it engrossed listening. </p>
+                    </div>
+                    <div class="category__list-item">
+                        <img src="Img/Setting.png" alt="Setting">
+                        <h2>Customization</h2>
+                        <p>We deliver outsourced aviation services for military customers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-bg">
+            </div>
+        </div>
+
+        <div class="container sell swiper" id="destinations">
+            <div class="sell__info">
+                <h2 class="topic">Top Selling</h2>
+                <h3 class="title">Top Destinations</h3>
+            </div>
+            <div class="slider-sell">
+                <div class="sell__list swiper-wrapper">
+                    <div class="sell__list-item swiper-slide">
+                        <img src="Img/Italy.png" alt="Italy" class="sell__img-place">
+                        <div class="sell__item-info">
+                            <h2>Rome, Italty</h2>
+                            <h2>$5,42k</h2>
+                        </div>
+                        <div class="sell__item-day">
+                            <img src="Img/Nav.png" alt="Navi">
+                            <h4>10 Days Trip</h4>
+                        </div>
+                    </div>
+                    <div class="sell__list-item swiper-slide">
+                        <img src="Img/London.jpg" alt="London" class="sell__img-place">
+                        <div class="sell__item-info">
+                            <h2>London, UK</h2>
+                            <h2>$4.2k</h2>
+                        </div>
+                        <div class="sell__item-day">
+                            <img src="Img/Nav.png" alt="Navi">
+                            <h4>12 Days Trip</h4>
+                        </div>
+                    </div>
+                    <div class="sell__list-item swiper-slide">
+                        <img src="Img/Europe.png" alt="Europe" class="sell__img-place">
+                        <div class="sell__item-info">
+                            <h2>Full Europe</h2>
+                            <h2>$15k</h2>
+                        </div>
+                        <div class="sell__item-day">
+                            <img src="Img/Nav.png" alt="Navi">
+                            <h4>28 Days Trip</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container book" id="bookings">
+            <div class="book__info">
+                <h2 class="topic">Easy and Fast</h2>
+                <h3 class="title">Book Your Next Trip In 3 Easy Steps</h3>
+                <div class="book__info-list">
+                    <div class="book__info-item">
+                        <img src="Img/Choose.png" alt="Choose logo">
+                        <div class="info__item-text">
+                            <h4>Choose Destination</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+                        </div>
+                    </div>
+                    <div class="book__info-item">
+                        <img src="Img/Make.png" alt="Make logo">
+                        <div class="info__item-text">
+                            <h4>Make Payment</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
+                    </div>
+                    <div class="book__info-item">
+                        <img src="Img/Reach.png" alt="Reach logo">
+                        <div class="info__item-text">
+                            <h4>Reach Airport on Selected Date</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book__list">
+                <div class="book__list-item">
+                    <img src="Img/Book Item.jpg" alt="Book item">
+                    <div class="book__item-content">
+                        <h3>Trip To Greece</h3>
+                        <p>14–29 June | by Robbin join</p>
+                        <div class="book__content-logo">
+                            <img src="Img/leaf.png" alt="Leaf icon">
+                            <img src="Img/map icon.png" alt="Map icon">
+                            <img src="Img/send.png" alt="Send icon">
+                        </div>
+                        <div class="book__content-emote">
+                            <div class="book__content-people">
+                                <img src="Img/Hotel.png" alt="Hotel">
+                                <p>24 people going</p>
+                            </div>
+                            <img src="Img/Heart.png" alt="Heart" class="book-heart">
+                        </div>
+                    </div>
+
+                    <div class="popup">
+                        <div class="popup__top">
+                            <img src="Img/Pagoda.png" alt="Pagoda">
+                            <div class="popup__top-info">
+                                <h3>Ongoing</h3>
+                                <h4>Trip to Rome</h4>
+                            </div>
+                        </div>
+                        <div class="popup-progress">
+                            <h5><span id="popup-percent">40%</span>completed</h5>
+                            <div class="progress-bar">
+                              <img src="Img/Line.png" alt="Line">
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container client swiper" id="login">
+            <div class="client__info">
+                <h2 class="topic">Testimonials</h2>
+                <h3 class="title">What people say about Us.</h3>
+            </div>
+            <div class="slider-client">
+                <div class="client__list swiper-wrapper">
+                    <div class="client__list-item swiper-slide">
+                        <img src="Img/Client.png" alt="Client" class="client-img">
+                        <div class="client__item-about">
+                            <p>"On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no."</p>
+                            <h3>Mike taylor</h3>
+                            <h4>Lahore, Pakistan</h4>
+                        </div>
+                    </div>
+                    <div class="client__list-item swiper-slide">
+                        <img src="Img/Client.png" alt="Client" class="client-img">
+                        <div class="client__item-about">
+                            <p>"On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no."</p>
+                            <h3>John Do</h3>
+                            <h4>CEO of Red Button</h4>
+                        </div>
+                    </div>
+                    <div class="client__list-item swiper-slide">
+                        <img src="Img/Client.png" alt="Client" class="client-img">
+                        <div class="client__item-about">
+                            <p>"On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no."</p>
+                            <h3>Mike John</h3>
+                            <h4>CEO of Red Button</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-client">
+                <div class="custom-prev">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </div>
+                <div class="custom-next">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container logo swiper">
+            <div class="slider-logo">
+                <div class="logo__list swiper-wrapper">
+                    <div class="logo__list-item swiper-slide"><img src="Img/Axon.png" alt="Axon logo" class="logo__item-axon"></div>
+                    <div class="logo__list-item swiper-slide"><img src="Img/Jetstar.png" alt="Jetstar logo" class="logo__item-jestar"></div>
+                    <div class="logo__list-item swiper-slide"><img src="Img/Expedia.png" alt="Expedia logo" class="logo__item-expedia"></div>
+                    <div class="logo__list-item swiper-slide"><img src="Img/Qantas.png" alt="Qantas logo" class="logo__item-qantas"></div>
+                    <div class="logo__list-item swiper-slide"><img src="Img/Alitalia.png" alt="Alitalia logo" class="logo__item-alitalia"></div>
+                </div>
+            </div>
+            <div class="custom-logo">
+                <div class="custom-left">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
+                <div class="custom-point">
+                    <img src="Img/point.png" alt="point">
+                </div>
+                <div class="custom-right">
+                    <i class="fa-solid fa-arrow-right-long"></i>                
+                </div>
+            </div>
+        </div>
+
+        <div class="container sub">
+            <div class="sub-bg">
+                <button class="sub__btn-icon"><img src="Img/Give.png" alt="Give icon"></button>
+                <div class="sub__title">
+                    <h3>Subscribe to get information, latest news and other interesting offers about Cobham</h3>
+                </div>
+                <div class="sub__email">
+                    <input type="text" name="email" class="sub__email-txt" placeholder="Your email">
+                    <img src="Img/Email.png" alt="Email logo">
+                    <button class="sub__email-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+    <footer>
+        <div class="container footer">
+            <div class="footer__logo">
+                <h2>Jadoo.</h2>
+                <p>Book your trip in minute, get full Control for much longer.</p>
+            </div>
+            <div class="footer__connect">
+                <div class="footer__connect-about">
+                    <h3 class="footer__about-title">Company</h3>
+                    <ul class="footer__connect-list">
+                        <li class="footer__connect-link"><a href="#">About</a></li>
+                        <li class="footer__connect-link"><a href="#">Careers</a></li>
+                        <li class="footer__connect-link"><a href="#">Mobile</a></li>
+                    </ul>
+                </div>
+                <div class="footer__connect-about">
+                    <h3 class="footer__about-title">Contact</h3>
+                    <ul class="footer__connect-list">
+                        <li class="footer__connect-link"><a href="#">Help/FAQ</a></li>
+                        <li class="footer__connect-link"><a href="#">Press</a></li>
+                        <li class="footer__connect-link"><a href="#">Affilates</a></li>
+                    </ul>
+                </div>
+                <div class="footer__connect-about">
+                    <h3 class="footer__about-title">More</h3>
+                    <ul class="footer__connect-list">
+                        <li class="footer__connect-link"><a href="#">Airlinefees</a></li>
+                        <li class="footer__connect-link"><a href="#">Airline</a></li>
+                        <li class="footer__connect-link"><a href="#">Low fare tips</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__socail">
+                <div class="footer__socail-icon">
+                    <img src="Img/Facebook.png" alt="Facebook icon">
+                    <img src="Img/Ins.png" alt="Ins icon">
+                    <img src="Img/Twit.png" alt="Twit icon">
+                </div>
+                <h4>Discover our app</h4>
+                <div class="footer__socail-app">
+                    <img src="Img/Google Play.png" alt="Google Play">
+                    <img src="Img/Play Store.png" alt="Play Store">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container cookie">
+        <h3>©UTA Dev Team 2023. All Rights Reserved</h3>
+    </div>
+
+</body>
+</html>
